@@ -11,6 +11,10 @@ end
 function _update()
  update_player()
  if (btn(5)) wfc(grid)
+ if (btn(4)) then 
+  if is_grid_collapsed(grid) then return end
+  iterate(grid)
+ end
 end
 
 function _draw() 
